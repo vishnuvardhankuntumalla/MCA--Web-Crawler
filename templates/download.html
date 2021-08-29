@@ -1,0 +1,32 @@
+<html>
+<head>
+<style>
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-color: RoyalBlue;
+}
+</style>
+</head>
+<body>
+
+  <div class="center">
+    <a type="button" class="btn btn-flat" href= "{{ url_for('.download') }}"><button class="btn" style="width:100%"><i class="fa fa-download"></i> Download</button></a>
+  </div>
+
+</body>
+</html>
